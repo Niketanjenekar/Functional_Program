@@ -25,6 +25,7 @@ namespace Functional_Program
             Console.WriteLine("5. Factors");
             Console.WriteLine("6. Quotient and Remainder");
             Console.WriteLine("7. Swap Two Numbers");
+            Console.WriteLine("8. Number is Even or Odd");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -90,6 +91,14 @@ namespace Functional_Program
                     int sVal = Convert.ToInt32(Console.ReadLine());
                     Swap_Two_Values swap_Two_Values = new Swap_Two_Values();
                     swap_Two_Values.Swapping_Values(fVal, sVal);
+                    break;
+
+                case 8:
+                    //Eight Problem
+                    Console.WriteLine("Please Enter the Number to Verify the Number is Even or Odd");
+                    int numOne = Convert.ToInt32(Console.ReadLine());
+                    Even_Odd even_Odd = new Even_Odd();
+                    even_Odd.Even_Or_Odd(numOne);
                     break;
 
                 default:
