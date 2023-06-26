@@ -27,6 +27,7 @@ namespace Functional_Program
             Console.WriteLine("7. Swap Two Numbers");
             Console.WriteLine("8. Number is Even or Odd");
             Console.WriteLine("9. Vowel or Consonant");
+            Console.WriteLine("10. Largest of Three Numbers");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -108,6 +109,20 @@ namespace Functional_Program
                     char alph = Convert.ToChar(Console.ReadLine());
                     Vowel_Consonant vowel_Consonant = new Vowel_Consonant();
                     vowel_Consonant.Vowel_Or_Consonant(alph);
+                    break;
+
+                case 10:
+                    //Tenth Problem
+                    Console.WriteLine("The Program to Find the Largest Number of Three");
+                    Console.WriteLine("Please enter the First Number");
+                    int firstVal = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter the Second Number");
+                    int secondVal = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter the Third Number");
+                    int thirdVal = Convert.ToInt32(Console.ReadLine());
+                    Largest_Of_Three largest_Of_Three = new Largest_Of_Three();
+                    largest_Of_Three.Largest(firstVal, secondVal, thirdVal);
+                    break;
                     break;
 
                 default:
