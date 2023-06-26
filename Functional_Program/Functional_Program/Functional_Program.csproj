@@ -43,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factors_Of_Numbers.cs" />
     <Compile Include="Flip_Coin_Program.cs" />
+    <Compile Include="Harmonic_Number.cs" />
     <Compile Include="Leap_Year.cs" />
     <Compile Include="Power_Of_Two.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quotient_Remainder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -23,6 +23,7 @@ namespace Functional_Program
             Console.WriteLine("3. Power of 2");
             Console.WriteLine("4. Harmonic Number");
             Console.WriteLine("5. Factors");
+            Console.WriteLine("6. Quotient and Remainder");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -66,6 +67,17 @@ namespace Functional_Program
                     int numTwo = Convert.ToInt32(Console.ReadLine());
                     Factors_Of_Numbers factors_Of_Numbers = new Factors_Of_Numbers();
                     factors_Of_Numbers.Factors(numTwo);
+                    break;
+
+                case 6:
+                    //Sixth Problem
+                    Console.WriteLine("Quotient and Remainder Program");
+                    Console.WriteLine("Enter the Dividend Value: ");
+                    int dividend = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter the Divisor Value: ");
+                    int divisor = Convert.ToInt32(Console.ReadLine());
+                    Quotient_Remainder quotient_Remainder = new Quotient_Remainder();
+                    quotient_Remainder.Quotient_And_Remainder(dividend, divisor);
                     break;
 
                 default:
