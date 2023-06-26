@@ -26,6 +26,7 @@ namespace Functional_Program
             Console.WriteLine("6. Quotient and Remainder");
             Console.WriteLine("7. Swap Two Numbers");
             Console.WriteLine("8. Number is Even or Odd");
+            Console.WriteLine("9. Vowel or Consonant");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -99,6 +100,14 @@ namespace Functional_Program
                     int numOne = Convert.ToInt32(Console.ReadLine());
                     Even_Odd even_Odd = new Even_Odd();
                     even_Odd.Even_Or_Odd(numOne);
+                    break;
+
+                case 9:
+                    //Ninth Problem
+                    Console.WriteLine("Please Enter the Alphabet to Check For Vowel or Consonant");
+                    char alph = Convert.ToChar(Console.ReadLine());
+                    Vowel_Consonant vowel_Consonant = new Vowel_Consonant();
+                    vowel_Consonant.Vowel_Or_Consonant(alph);
                     break;
 
                 default:
