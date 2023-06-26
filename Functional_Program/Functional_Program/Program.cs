@@ -24,6 +24,7 @@ namespace Functional_Program
             Console.WriteLine("4. Harmonic Number");
             Console.WriteLine("5. Factors");
             Console.WriteLine("6. Quotient and Remainder");
+            Console.WriteLine("7. Swap Two Numbers");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -78,6 +79,17 @@ namespace Functional_Program
                     int divisor = Convert.ToInt32(Console.ReadLine());
                     Quotient_Remainder quotient_Remainder = new Quotient_Remainder();
                     quotient_Remainder.Quotient_And_Remainder(dividend, divisor);
+                    break;
+
+                case 7:
+                    //Seventh Problem
+                    Console.WriteLine("Swapping Two Values Program");
+                    Console.WriteLine("Enter the First Value: ");
+                    int fVal = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter the Second Value: ");
+                    int sVal = Convert.ToInt32(Console.ReadLine());
+                    Swap_Two_Values swap_Two_Values = new Swap_Two_Values();
+                    swap_Two_Values.Swapping_Values(fVal, sVal);
                     break;
 
                 default:
