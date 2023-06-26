@@ -22,6 +22,7 @@ namespace Functional_Program
             Console.WriteLine("2. Leap Year");
             Console.WriteLine("3. Power of 2");
             Console.WriteLine("4. Harmonic Number");
+            Console.WriteLine("5. Factors");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -57,6 +58,14 @@ namespace Functional_Program
                     int num = Convert.ToInt32(Console.ReadLine());
                     Harmonic_Number harmonic = new Harmonic_Number();
                     harmonic.Harmonic_Number_Prog(num);
+                    break;
+
+                case 5:
+                    //Fifth Problem
+                    Console.WriteLine("Please Enter the Number to Find the Factors of Numbers");
+                    int numTwo = Convert.ToInt32(Console.ReadLine());
+                    Factors_Of_Numbers factors_Of_Numbers = new Factors_Of_Numbers();
+                    factors_Of_Numbers.Factors(numTwo);
                     break;
 
                 default:
