@@ -19,6 +19,7 @@ namespace Functional_Program
             Console.WriteLine("Please select an option for the program to Execute");
 
             Console.WriteLine("1. Flip Coin And Print Percentage");
+            Console.WriteLine("2. Leap Year");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -30,6 +31,14 @@ namespace Functional_Program
                     Console.ReadLine();
                     Flip_Coin_Program flip_Coin = new Flip_Coin_Program();
                     flip_Coin.Flip_Coin();
+                    break;
+
+                case 2:
+                    //Second Problem
+                    Console.WriteLine("Please Enter the Year");
+                    int year = Convert.ToInt32(Console.ReadLine());
+                    Leap_Year leap_Year = new Leap_Year();
+                    leap_Year.LeapYr(year);
                     break;
 
                 default:
