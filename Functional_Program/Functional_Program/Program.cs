@@ -21,6 +21,7 @@ namespace Functional_Program
             Console.WriteLine("1. Flip Coin And Print Percentage");
             Console.WriteLine("2. Leap Year");
             Console.WriteLine("3. Power of 2");
+            Console.WriteLine("4. Harmonic Number");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -48,6 +49,14 @@ namespace Functional_Program
                     int number = Convert.ToInt32(Console.ReadLine());
                     Power_Of_Two power = new Power_Of_Two();
                     power.PowerofTwo(number);
+                    break;
+
+                case 4:
+                    //Fourth Problem
+                    Console.WriteLine("Please Enter the Number to Find the Harmonic Value");
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    Harmonic_Number harmonic = new Harmonic_Number();
+                    harmonic.Harmonic_Number_Prog(num);
                     break;
 
                 default:
