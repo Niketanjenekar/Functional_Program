@@ -20,6 +20,7 @@ namespace Functional_Program
 
             Console.WriteLine("1. Flip Coin And Print Percentage");
             Console.WriteLine("2. Leap Year");
+            Console.WriteLine("3. Power of 2");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -39,6 +40,14 @@ namespace Functional_Program
                     int year = Convert.ToInt32(Console.ReadLine());
                     Leap_Year leap_Year = new Leap_Year();
                     leap_Year.LeapYr(year);
+                    break;
+
+                case 3:
+                    //Third Problem
+                    Console.WriteLine("Please Enter the Value to find the Power of Two");
+                    int number = Convert.ToInt32(Console.ReadLine());
+                    Power_Of_Two power = new Power_Of_Two();
+                    power.PowerofTwo(number);
                     break;
 
                 default:

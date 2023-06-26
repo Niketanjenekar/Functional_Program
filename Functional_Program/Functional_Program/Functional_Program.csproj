@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Flip_Coin_Program.cs" />
     <Compile Include="Leap_Year.cs" />
+    <Compile Include="Power_Of_Two.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
